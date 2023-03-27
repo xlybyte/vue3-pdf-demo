@@ -1,5 +1,5 @@
 {
-  "name": "vue-pdf-canvas",
+  "name": "pdf-canvas",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

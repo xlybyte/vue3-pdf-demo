@@ -1,5 +1,4 @@
 {
-  "name": "vue3-pdf-demo",
   "private": true,
   "workspaces": [
     "packages/*"

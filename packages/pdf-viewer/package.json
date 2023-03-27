@@ -1,5 +1,5 @@
 {
-  "name": "vue-pdf-viewer",
+  "name": "pdf-viewer",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
