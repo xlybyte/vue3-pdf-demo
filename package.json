@@ -1,0 +1,10 @@
+{
+  "name": "vue3-pdf-demo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^6.6.1"
+  }
+}
