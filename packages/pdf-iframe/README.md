@@ -1,2 +1,2 @@
-# canvas渲染方式
+# iframe渲染方式
 
