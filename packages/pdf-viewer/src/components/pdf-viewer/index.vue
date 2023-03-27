@@ -29,12 +29,17 @@ onMounted(() => {
 })
 async function getPdf() {
   const container = document.getElementById('pageContainer')
+  // 实例化pdf视图
   const pdfViewer = new PDFViewer({
     container: container,
   })
+  // 加载pdf文件
   const loadingTask = pdfjsLib.getDocument(props.url)
+  // 生成文档
   const pdf = await loadingTask.promise
+  // 开始绘制到dom
   pdfViewer.setDocument(pdf)
+  // 监听pagerendered来实现 判断 是否渲染完成，如果要打印一定要渲染完成后再打印，不然会有空白
   document.addEventListener('pagerendered', function (e) {
     if (e.detail.pageNumber === pdf.numPages) {
       // 渲染完成
